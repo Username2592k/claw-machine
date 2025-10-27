@@ -94,24 +94,18 @@ void loop() {
       digitalWrite(zMoterA2, LOW);
       digitalWrite(zMoterB1, LOW);
       digitalWrite(zMoterB2, HIGH);
-      analogWrite(A4, 100);
-      analogWrite(A5, 100);
     } 
     else if (offset_y < -250) {
       digitalWrite(zMoterA1, LOW);
       digitalWrite(zMoterA2, HIGH);
       digitalWrite(zMoterB1, HIGH);
       digitalWrite(zMoterB2, LOW);
-      analogWrite(A4, 100);
-      analogWrite(A5, 100);
     } 
     else {
       digitalWrite(zMoterA1, LOW);
       digitalWrite(zMoterA2, LOW);
       digitalWrite(zMoterB1, LOW);
       digitalWrite(zMoterB2, LOW);
-      analogWrite(A4, 0);
-      analogWrite(A5, 0);
     }
 
     // Grapper control
