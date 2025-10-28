@@ -144,11 +144,11 @@ void loop() {
         digitalWrite(armMoterB2, LOW);
         analogWrite(A4, 0);
         analogWrite(A5, 0);
-        grapper_status = 2;
+        grapper_status = 1;
 
         delay(1000);
       }
-      else if(grapper_status == 2) {
+      else if(grapper_status == 1) {
         isStarted = false;
       }
     }
